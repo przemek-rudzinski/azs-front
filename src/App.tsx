@@ -1,10 +1,11 @@
-import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import StartPage from './pages/StartPage'
 
 function App() {
   return (
-    <div className='text-green-500 text-center bg-green-200'>
-      <h1 className='text-3xl font-bold underline text-blue-500'>Hello world!</h1>
-    </div>
+    <Routes>
+      <Route path='/' element={<StartPage />}></Route>
+    </Routes>
   )
 }
 
