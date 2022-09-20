@@ -51,9 +51,10 @@ type exclusionType = {
   karny: number
 }
 
-const defaultMatch: { _id: string; meczKod: string; zawodnik: playerType[] } = {
+const defaultMatch: { _id: string; meczKod: string; date: string; zawodnik: playerType[] } = {
   _id: '',
   meczKod: '',
+  date: '',
   zawodnik: [
     {
       impact: {
